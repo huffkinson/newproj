@@ -25,7 +25,7 @@
 			<!-- submit button -->
 			<div class="form-group">
 				<input type="submit" class="form-control btn btn-primary" value="LOGIN">
-				<a href="http://localhost/newproj/" class="form-control btn btn-danger">Cancel</a>
+				<a href="#" class="form-control btn btn-danger">Cancel</a>
 			</div>
 		</form>
 	</div>
