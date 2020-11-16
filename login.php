@@ -15,16 +15,17 @@
 			<!-- username field -->
 			<div class="form-group">
 				<label>Username</label>
-				<input type="text" name="user" class="form-control">
+				<input type="text" name="username" class="form-control">
 			</div>
 			<!-- password field -->
 			<div class="form-group">
 				<label>Password</label>
-				<input type="password" name="password" class="form-control">
+				<input type="password" name="password" class="form-control" value="">
 			</div>
 			<!-- submit button -->
 			<div class="form-group">
 				<input type="submit" class="form-control btn btn-primary" value="LOGIN">
+				<input type="cancel" class="form-control btn btn-danger" value="Cancel">
 			</div>
 		</form>
 	</div>
