@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'popper.js',
+1 verbose cli   '--save' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'popper.js', null ]
+5 verbose cache add name=undefined spec="popper.js" args=["popper.js",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'popper.js',
+6 verbose parsed url   path: 'popper.js',
+6 verbose parsed url   href: 'popper.js' }
+7 silly lockFile 5433a80c-popper-js popper.js
+8 verbose lock popper.js /home/keith/.npm/5433a80c-popper-js.lock
+9 silly lockFile 5433a80c-popper-js popper.js
+10 silly lockFile 5433a80c-popper-js popper.js
+11 verbose addNamed [ 'popper.js', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile a3dc68a3-popper-js popper.js@
+14 verbose lock popper.js@ /home/keith/.npm/a3dc68a3-popper-js.lock
+15 silly addNameRange { name: 'popper.js', range: '*', hasData: false }
+16 verbose url raw popper.js
+17 verbose url resolving [ 'https://registry.npmjs.org/', './popper.js' ]
+18 verbose url resolved https://registry.npmjs.org/popper.js
+19 info trying registry request attempt 1 at 18:10:35
+20 http GET https://registry.npmjs.org/popper.js
+21 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+22 info trying registry request attempt 2 at 18:10:45
+23 http GET https://registry.npmjs.org/popper.js
+24 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+25 info trying registry request attempt 3 at 18:11:45
+26 http GET https://registry.npmjs.org/popper.js
+27 silly lockFile a3dc68a3-popper-js popper.js@
+28 silly lockFile a3dc68a3-popper-js popper.js@
+29 error Error: CERT_UNTRUSTED
+29 error     at SecurePair.<anonymous> (tls.js:1370:32)
+29 error     at SecurePair.EventEmitter.emit (events.js:92:17)
+29 error     at SecurePair.maybeInitFinished (tls.js:982:10)
+29 error     at CleartextStream.read [as _read] (tls.js:469:13)
+29 error     at CleartextStream.Readable.read (_stream_readable.js:320:10)
+29 error     at EncryptedStream.write [as _write] (tls.js:366:25)
+29 error     at doWrite (_stream_writable.js:223:10)
+29 error     at writeOrBuffer (_stream_writable.js:213:5)
+29 error     at EncryptedStream.Writable.write (_stream_writable.js:180:11)
+29 error     at write (_stream_readable.js:583:24)
+30 error If you need help, you may report this log at:
+30 error     <http://github.com/isaacs/npm/issues>
+30 error or email it to:
+30 error     <npm-@googlegroups.com>
+31 error System Linux 4.4.0-148-generic
+32 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "popper.js" "--save"
+33 error cwd /var/www/html/newproj
+34 error node -v v0.10.25
+35 error npm -v 1.3.10
+36 verbose exit [ 1, true ]
