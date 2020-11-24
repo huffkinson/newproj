@@ -11,7 +11,7 @@
 <div class="container">
 	<div class="container-fluid col-sm-6 col-md-6 col-lg-6">
 		<h2>Login</h2>
-		<form action="" method="POST">
+		<form action="login2.php?op=in" method="POST">
 			<!-- username field -->
 			<div class="form-group">
 				<label>Username</label>
