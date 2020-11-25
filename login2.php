@@ -16,6 +16,7 @@
 			$_SESSION['username'] = $row['username'];
 			$_SESSION['fullname'] = $row['fname'];
 			$_SESSION['role'] = $row['role'];
+			header("Location:dashboard.php");
 			
 			//checking roles for menu and operation purposes 
 			/*if ($row['role']=="admin") {
