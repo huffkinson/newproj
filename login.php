@@ -54,8 +54,8 @@
 						<div class="form-group">
 							<input type="submit" class="form-control btn btn-primary" value="LOGIN">
 						</div>
-						<div class="form-group col-lg-12">
-							<a href="index.php"><button type="button" class="btn btn-md btn-outline-danger">Return to Homepage</button></a>
+						<div class="form-group">
+							<a href="index.php" class="form-control btn btn-danger">Return to Main Page</a>
 						</div>
 					</form>
 				</div>
