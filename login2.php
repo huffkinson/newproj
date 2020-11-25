@@ -16,12 +16,13 @@
 			$_SESSION['username'] = $row['username'];
 			$_SESSION['fullname'] = $row['fname'];
 			$_SESSION['role'] = $row['role'];
-			 
-			if ($row['role']=="admin") {
-				header("Location:index.php");
+			
+			//checking roles for menu and operation purposes 
+			/*if ($row['role']=="admin") {
+				header("Location:dashboard.php");
 			} else{
-				header("Location:index.php");
-			}
+				header("Location:dashboard.php");
+			}*/
 		} else {
 			?>
 
@@ -35,6 +36,6 @@
 	} elseif ($op=="out") {
 		unset($_SESSION['user']);
 		unset($_SESSION['level']);
-		header("location:login.php");
+		header("location:index.php");
 	}
 ?>
