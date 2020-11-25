@@ -13,7 +13,7 @@
 
 		if ($row==1) {
 			$row = mysqli_fetch_array($result);
-			$_SESSION['username'] = $row['username'];
+			$_SESSION['user'] = $row['username'];
 			$_SESSION['fullname'] = $row['fname'];
 			$_SESSION['role'] = $row['role'];
 			header("Location:dashboard.php");
