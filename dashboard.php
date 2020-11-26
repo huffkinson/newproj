@@ -133,14 +133,25 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+
+		<!-- start of collapseable navbar -->
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<!-- start of menu -->
 			<ul class="navbar-nav ml-auto">
+				<!-- start of menu items -->
 				<li class="nav-item active">
 					<a class="nav-link" href="dashboard.php">Dashboard</a>
 				</li>
-				<!-- <li class="nav-item">
-					<a class="nav-link" href="clients.php">Clients</a>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Clients</a>
 				</li>
+				<li class="nav-item">
+					<a href="logout.php"><button type="button" class="btn btn-md btn-outline-secondary">Sign out</button></a>
+				</li> 
+			</ul>
+			<!-- end of menu -->
+				<!-- end of list items -->
+				<!--
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">SOA</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -160,87 +171,90 @@
 				<li class="nav-item">
 					<a class="nav-link" href="collection.php">Collections</a>
 				</li> -->
-				<li class="nav-item">
-					<a href="logout.php"><button type="button" class="btn btn-md btn-outline-secondary">Sign out</button></a>
-				</li> 
-			</ul>
+				
 		</div>
+		<!-- end of collapseable navbar -->
 	</nav>
 	<!-- navigation ends here -->
 
 	<!-- album section -->
 	<div class="album py-5 bg-light">
-	    <div class="container"> <!-- start of container -->
+	    <!-- start of first container -->
+	    <div class="container">
 	    	
-	      <div class="row"> <!-- start of row -->
-	        <!-- start or album card 1 -->
-	        <div class="col-md-4 col-sm-12 col-xs-12">
-	          <div class="card mb-4 shadow-lg">
-	            <div class="card-body">
-		          <h4 class="card-title">Customers</h4>
-	            </div>
-	          </div>
-	        </div>
-	        <!-- end of album card 1 -->
+	      <!-- start of first row -->
+	      <div class="row"> 
+		        <!-- start or album card 1 -->
+		        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg">
+		            <div class="card-body">
+			          <h4 class="card-title">Clients</h4>
+		            </div>
+		          </div>
+		        </div>
+		        <!-- end of album card 1 -->
 
-	        <!-- start or album card 2-->
-	        <div class="col-md-4 col-sm-12 col-xs-12">
-	          <div class="card mb-4 shadow-lg">
-	            <div class="card-body">
-		          <h4 class="card-title">SOA</h4>
-	            </div>
-	          </div>
-	        </div>
-	      <!-- end of album card 2-->
+		        <!-- start or album card 2-->
+		        <div class="col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg">
+		            <div class="card-body">
+			          <h4 class="card-title">SOA</h4>
+		            </div>
+		          </div>
+		        </div>
+	      		<!-- end of album card 2-->
+				
+				<!-- start or album card 3-->
+		        <div class="col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg">
+		            <div class="card-body">
+			          <h4 class="card-title">Vouchers</h4>
+		            </div>
+		          </div>
+		        </div>
+		      	<!-- end of album card 3-->
+	      </div>
+	      <!-- end of first row -->
 
-	      <!-- start or album card 3-->
-	        <div class="col-md-4 col-sm-12 col-xs-12">
-	          <div class="card mb-4 shadow-lg">
-	            <div class="card-body">
-		          <h4 class="card-title">Vouchers</h4>
-	            </div>
-	          </div>
-	        </div>
-	      <!-- end of album card 3-->
-	      </div> <!-- end of row -->
-
-	      <!-- start of row -->
+	      <!-- start of second row -->
 	      <div class="row">
-	      	<!-- start or album card 1-->
-	        <div class="col-md-4 col-sm-12 col-xs-12">
-	          <div class="card mb-4 shadow-lg">
-	            <div class="card-body">
-		          <h4 class="card-title">Reports</h4>
-	            </div>
-	          </div>
-	        </div>
-	      <!-- end of album card 1-->
+		      	<!-- start or album card 1-->
+		        <div class="col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg">
+		            <div class="card-body">
+			          <h4 class="card-title">Reports</h4>
+		            </div>
+		          </div>
+		        </div>
+	      		<!-- end of album card 1-->
 
-	      <!-- start or album card 2-->
-	        <div class="col-md-4 col-sm-12 col-xs-12">
-	          <div class="card mb-4 shadow-lg">
-	            <div class="card-body">
-		          <h4 class="card-title">Collection</h4>
-	            </div>
-	          </div>
-	        </div>
-	      <!-- end of album card 2-->
+	      		<!-- start or album card 2-->
+		        <div class="col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg">
+		            <div class="card-body">
+			          <h4 class="card-title">Collection</h4>
+		            </div>
+		          </div>
+		        </div>
+	     		<!-- end of album card 2-->
 
-	      <!-- start or album card 3-->
-	        <div class="col-md-4 col-sm-12 col-xs-12">
-	          <div class="card mb-4 shadow-lg">
-	            <div class="card-body">
-		          <h4 class="card-title">Charges</h4>
-	            </div>
-	          </div>
-	        </div>
-	      <!-- end of album card 3-->
+	      		<!-- start or album card 3-->
+		        <div class="col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg">
+		            <div class="card-body">
+			          <h4 class="card-title">Charges</h4>
+		            </div>
+		          </div>
+		        </div>
+	      		<!-- end of album card 3-->
+	      </div>
+	      <!-- end of second row -->
 	      
-	      <!-- end of row -->
 	      
-	      
-	    </div> <!-- end of container -->
-  </div>
-<!-- this is the admin page -->
+	    </div>
+	    <!-- end of container -->
+	</div>
+	<!-- end of album section -->
+  
 </body>
 </html>
