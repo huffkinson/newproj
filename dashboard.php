@@ -120,7 +120,7 @@
 
 	<style>
 		.card-height {
-			height: 500px;
+			height: 200px;
 		}
 	</style>
 
@@ -139,12 +139,43 @@
 			<!-- start of menu -->
 			<ul class="navbar-nav ml-auto">
 				<!-- start of menu items -->
+
+				<!-- Main Dashboard Link -->
 				<li class="nav-item active">
 					<a class="nav-link" href="dashboard.php">Dashboard</a>
 				</li>
+
+				<!-- Clients Page Link -->
 				<li class="nav-item">
 					<a class="nav-link" href="#">Clients</a>
 				</li>
+
+				<!-- SOA Page Link -->
+				<li class="nav-item">
+					<a class="nav-link" href="#">SOA</a>
+				</li>
+
+				<!-- Vouchers Page Link -->
+				<li class="nav-item">
+					<a class="nav-link" href="#">Vouchers</a>
+				</li>
+
+				<!-- Collections Page Link -->
+				<li class="nav-item">
+					<a class="nav-link" href="#">Collections</a>
+				</li>
+
+				<!-- Reports Page Link -->
+				<li class="nav-item">
+					<a class="nav-link" href="#">Reports</a>
+				</li>
+
+				<!-- Charges Page Link -->
+				<li class="nav-item">
+					<a class="nav-link" href="#">Charges</a>
+				</li>
+
+				<!-- Sign-out Link -->
 				<li class="nav-item">
 					<a href="logout.php"><button type="button" class="btn btn-md btn-outline-secondary">Sign out</button></a>
 				</li> 
@@ -187,28 +218,49 @@
 		        <!-- start or album card 1 -->
 		        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 		          <div class="card mb-4 shadow-lg">
-		            <div class="card-body">
-			          <h4 class="card-title">Clients</h4>
+		          	<div class="card-header bg-primary text-white text-center">
+		          		<h4>Clients</h4>
+		          	</div>
+		            <div class="card-body text-center">
+		            <p class="card-text">
+			          	Total clients: 
+			          </p>
+			          <br>
+			          <a href="#" class="card-link btn btn-sm btn-primary">View</a>
 		            </div>
 		          </div>
 		        </div>
 		        <!-- end of album card 1 -->
 
 		        <!-- start or album card 2-->
-		        <div class="col-md-4 col-sm-12 col-xs-12">
+		        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 		          <div class="card mb-4 shadow-lg">
-		            <div class="card-body">
-			          <h4 class="card-title">SOA</h4>
+		          	<div class="card-header bg-success text-white text-center">
+		          		<h4>SOA</h4>
+		          	</div>
+		            <div class="card-body text-center">
+			          <p class="card-text">
+			          	Total SOA: 
+			          </p>
+			          <br>
+			          <a href="#" class="card-link btn btn-sm btn-success">View</a>
 		            </div>
 		          </div>
 		        </div>
 	      		<!-- end of album card 2-->
 				
 				<!-- start or album card 3-->
-		        <div class="col-md-4 col-sm-12 col-xs-12">
+		        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 		          <div class="card mb-4 shadow-lg">
-		            <div class="card-body">
-			          <h4 class="card-title">Vouchers</h4>
+		          	<div class="card-header bg-danger text-white text-center">
+		          		<h4>Vouchers</h4>
+		          	</div>
+		            <div class="card-body text-center">
+			         <p class="card-text">
+			          	Total amount: 
+			          </p>
+			          <br>
+			          <a href="#" class="card-link btn btn-sm btn-danger">View</a>
 		            </div>
 		          </div>
 		        </div>
@@ -219,30 +271,51 @@
 	      <!-- start of second row -->
 	      <div class="row">
 		      	<!-- start or album card 1-->
-		        <div class="col-md-4 col-sm-12 col-xs-12">
-		          <div class="card mb-4 shadow-lg">
-		            <div class="card-body">
-			          <h4 class="card-title">Reports</h4>
+		        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg card-height">
+		          	<div class="card-header bg-info text-white text-center">
+		          		<h4>Collections</h4>
+		          	</div>
+		            <div class="card-body text-center">
+			          <p class="card-text">
+			          	Total collection: 
+			          </p>
+			          <br>
+			          <a href="#" class="card-link btn btn-sm btn-info">View</a>
 		            </div>
 		          </div>
 		        </div>
 	      		<!-- end of album card 1-->
 
 	      		<!-- start or album card 2-->
-		        <div class="col-md-4 col-sm-12 col-xs-12">
-		          <div class="card mb-4 shadow-lg">
-		            <div class="card-body">
-			          <h4 class="card-title">Collection</h4>
+		        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg card-height">
+		          	<div class="card-header bg-warning text-white text-center">
+		          		<h4>Reports</h4>
+		          	</div>
+		            <div class="card-body text-center">
+			          <p class="card-text">
+			          	Total records: 
+			          </p>
+			          <br>
+			          <a href="#" class="card-link btn btn-sm btn-warning">View</a>
 		            </div>
 		          </div>
 		        </div>
 	     		<!-- end of album card 2-->
 
 	      		<!-- start or album card 3-->
-		        <div class="col-md-4 col-sm-12 col-xs-12">
-		          <div class="card mb-4 shadow-lg">
-		            <div class="card-body">
-			          <h4 class="card-title">Charges</h4>
+		        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		          <div class="card mb-4 shadow-lg card-height">
+		          	<div class="card-header bg-dark text-white text-center">
+		          		<h4>Charges</h4>
+		          	</div>
+		            <div class="card-body text-center">
+			          <p class="card-text">
+			          	Total records: 
+			          </p>
+			          <br>
+			          <a href="#" class="card-link btn btn-sm btn-dark">View</a>
 		            </div>
 		          </div>
 		        </div>
