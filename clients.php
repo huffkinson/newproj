@@ -8,7 +8,7 @@
     
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="landing-page.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/datatables.min.css">
 
 	<!-- Fontawesome -->
@@ -20,6 +20,16 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/datatables.min.js"></script>
+
+	<style type="text/css">
+		/*.spacer{
+			margin-top: 0.5em;
+		}
+		.button-margin{
+			margin-left: 0.5em;
+			margin-right: 0.5em;
+		}*/
+	</style>
 
 </head>
 <body>
@@ -103,6 +113,28 @@
 		<!-- end of collapseable navbar -->
 	</nav>
 	<!-- navigation ends here -->
+
+	<!-- start of client container -->
+	<div class="container-fluid">
+		<!-- start of first row -->
+		<div class="row justify-content-center bg-primary text-light">
+			<h2><b>Client Listing</b></h2>
+		</div>
+		<!-- end of first row -->
+
+		<!-- start of second row -->
+
+		<div class="row spacer justify-content-center">			
+			
+				<a href="#" class="btn btn-primary btn-sm">Link 1</a>
+				<a href="#" class="btn btn-success btn-sm button-margin">Link 2</a>
+				<a href="#" class="btn btn-danger btn-sm">Link 3</a>
+
+		</div>
+		<!-- end of second row -->
+
+	</div>
+	<!-- end of client container -->
 
 </body>
 </html>
