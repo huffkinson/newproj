@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Clients | BATS</title>
+	<title>Clients | BOACTS</title>
 
 	<!-- bootstrap, styles, and scripts -->
 	<meta charset="utf-8">

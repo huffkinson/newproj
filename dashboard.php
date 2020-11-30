@@ -98,7 +98,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dashboard | BATS</title>
+	<title>Dashboard | BOACTS</title>
 
 	<!-- bootstrap, styles, and scripts -->
 	<meta charset="utf-8">
