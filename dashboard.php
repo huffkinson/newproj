@@ -98,7 +98,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to the Dashboard | Admin</title>
+	<title>Dashboard | BATS</title>
 
 	<!-- bootstrap, styles, and scripts -->
 	<meta charset="utf-8">
