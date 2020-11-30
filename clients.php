@@ -24,7 +24,7 @@
 </head>
 <body>
 <!-- navigation bar starts here -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 		<a class="navbar-brand" href="dashboard.php">BOACTS</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
 			<span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
 
 				<!-- Clients Page Link -->
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Clients</a>
+					<a class="nav-link" href="clients.php">Clients</a>
 				</li>
 
 				<!-- SOA Page Link -->

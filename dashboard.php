@@ -147,7 +147,7 @@
 
 				<!-- Clients Page Link -->
 				<li class="nav-item">
-					<a class="nav-link" href="#">Clients</a>
+					<a class="nav-link" href="clients.php">Clients</a>
 				</li>
 
 				<!-- SOA Page Link -->
@@ -226,7 +226,7 @@
 			          	Total clients: 
 			          </p>
 			          <br>
-			          <a href="#" class="card-link btn btn-sm btn-primary">View</a>
+			          <a href="clients.php" class="card-link btn btn-sm btn-primary">View</a>
 		            </div>
 		          </div>
 		        </div>
