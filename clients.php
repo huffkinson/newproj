@@ -146,7 +146,53 @@
 						<div class="modal-body">
 							<div class="container-fluid">
 							<!-- start of form -->
-								<form>
+								<form class="form" method="POST" action="#">
+								<!-- label and text control for client id -->
+								<div class="row form-group">
+									<label class="control-label">Client ID</label>
+									<input type="text" class="form-control" name="client_id">
+								</div>
+								<!-- label and text control for fullname -->
+								<div class="row form-group">
+									<label class="control-label">Full Name</label>
+									<input type="text" class="form-control" name="client_name">
+								</div>
+								<!-- label and text control for vat type -->
+								<div class="row form-group">
+									<label class="control-label">VAT Type</label>
+									<input type="text" class="form-control" name="client_vat_type">
+									<!-- <input type="text" class="form-control" name="client_name"> -->
+								</div>
+								<!-- label and text control for rdo -->
+								<div class="row form-group">
+									<label class="control-label">RDO</label>
+									<input type="text" class="form-control" name="client_rdo">
+								</div>
+								<!-- label and text control for tin -->
+								<div class="row form-group">
+									<label class="control-label">TIN</label>
+									<input type="text" class="form-control" name="client_tin">
+								</div>
+								<!-- label and text control for tradename -->
+								<div class="row form-group">
+									<label class="control-label">Tradename</label>
+									<input type="text" class="form-control" name="client_trade_name">
+								</div>
+								<!-- label and text control for line of business -->
+								<div class="row form-group">
+									<label class="control-label">Line of Business</label>
+									<input type="text" class="form-control" name="client_line_of_business">
+								</div>
+								<!-- label and text control for business address -->
+								<div class="row form-group">
+									<label class="control-label">Address</label>
+									<input type="text" class="form-control" name="client_address">
+								</div>
+								<!-- label and text control for email address -->
+								<div class="row form-group">
+									<label class="control-label">Email</label>
+									<input type="email" class="form-control" name="client_email">
+								</div>
 							</div>
 						</div>
 						<!-- end of modal body -->
