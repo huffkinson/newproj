@@ -132,7 +132,7 @@
 			<div class="modal fade" data-keyboard="false" data-backdrop="static" id="AddNew" tabindex="-1" aria-hidden="true">
 
 				<!-- start of modal dialog -->
-				<div class="modal-dialog modal-lg modal-dialog-scrollable">
+				<div class="modal-dialog modal-dialog-scrollable">
 					<!-- start of modal content -->
 					<div class="modal-content">
 						<!-- start of modal header -->
@@ -150,17 +150,17 @@
 								<!-- label and text control for client id -->
 								<div class="row form-group">
 									<label class="control-label">Client ID</label>
-									<input type="text" class="form-control" name="client_id">
+									<input type="text" class="form-control" name="client_id" required>
 								</div>
 								<!-- label and text control for fullname -->
 								<div class="row form-group">
 									<label class="control-label">Full Name</label>
-									<input type="text" class="form-control" name="client_name">
+									<input type="text" class="form-control" name="client_name" required>
 								</div>
 								<!-- label and text control for vat type -->
 								<div class="row form-group">
 									<label class="control-label">VAT Type</label>
-									<input type="text" class="form-control" name="client_vat_type">
+									<input type="text" class="form-control" name="client_vat_type" required>
 									<!-- <input type="text" class="form-control" name="client_name"> -->
 								</div>
 								<!-- label and text control for rdo -->
@@ -176,17 +176,17 @@
 								<!-- label and text control for tradename -->
 								<div class="row form-group">
 									<label class="control-label">Tradename</label>
-									<input type="text" class="form-control" name="client_trade_name">
+									<input type="text" class="form-control" name="client_trade_name" required>
 								</div>
 								<!-- label and text control for line of business -->
 								<div class="row form-group">
 									<label class="control-label">Line of Business</label>
-									<input type="text" class="form-control" name="client_line_of_business">
+									<input type="text" class="form-control" name="client_line_of_business" required>
 								</div>
 								<!-- label and text control for business address -->
 								<div class="row form-group">
 									<label class="control-label">Address</label>
-									<input type="text" class="form-control" name="client_address">
+									<input type="text" class="form-control" name="client_address" required>
 								</div>
 								<!-- label and text control for email address -->
 								<div class="row form-group">
@@ -198,6 +198,7 @@
 						<!-- end of modal body -->
 						<!-- start of modal footer -->
 						<div class="modal-footer">
+							<button type="submit" class="btn btn-primary btn-sm">Save</button>
 							<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
 
 							</form>
