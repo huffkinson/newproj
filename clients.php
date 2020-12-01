@@ -125,10 +125,44 @@
 		<!-- start of second row -->
 
 		<div class="row spacer justify-content-center">			
-			
-				<a href="#" class="btn btn-primary btn-sm">Link 1</a>
-				<a href="#" class="btn btn-success btn-sm button-margin">Link 2</a>
-				<a href="#" class="btn btn-danger btn-sm">Link 3</a>
+			<!-- Add New Modal Link -->
+			<a href="#AddNew" class="btn btn-primary btn-sm" data-toggle="modal">Add New</a>
+
+			<!-- Add New Modal Dialog -->
+			<div class="modal fade" data-keyboard="false" data-backdrop="static" id="AddNew" tabindex="-1" aria-hidden="true">
+
+				<!-- start of modal dialog -->
+				<div class="modal-dialog modal-lg modal-dialog-scrollable">
+					<!-- start of modal content -->
+					<div class="modal-content">
+						<!-- start of modal header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Add New Client</h4>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- end of modal header -->
+						
+						<!-- start of modal body -->
+						<div class="modal-body">
+							<div class="container-fluid">
+							<!-- start of form -->
+								<form>
+							</div>
+						</div>
+						<!-- end of modal body -->
+						<!-- start of modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+
+							</form>
+							<!-- end of form -->
+						</div>
+						<!-- end of modal footer -->
+					</div>
+					<!-- end of modal content -->
+				</div>
+				<!-- end of modal dialog -->
+			</div>
 
 		</div>
 		<!-- end of second row -->
