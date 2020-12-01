@@ -214,8 +214,168 @@
 		</div>
 		<!-- end of second row -->
 
+		<!-- start of third row -->
+		<!-- start of client listing -->
+		<div class="container-fluid">
+			<div class="container spacer">
+				<!-- start of client table -->
+				<table class="table table-striped table-bordered table-hover table-sm" id="data-table">
+					<thead class="thead-dark">
+
+							<th>ID</th>
+							<th>Full Name</th>
+							<th>VAT Type</th>
+							<th>RDO</th>
+							<th>Details</th>
+							<th>Edit</th>
+							<th>Delete</th>
+
+					</thead>
+					<tbody>
+						<?php
+							include('conn.php');
+
+							$SQL = "SELECT * FROM tbl_client";
+
+							$result = mysqli_query($connection, $SQL);
+
+							while($row=mysqli_fetch_assoc($result)){
+
+								?>
+								<tr>
+									<td><?php echo $row['client_id']; ?></td>
+									<td><?php echo $row['client_name']; ?></td>
+									<td><?php echo $row['client_vat_type']; ?></td>
+									<td><?php echo $row['client_rdo']; ?></td>
+									<td><?php echo $row['client_tin']; ?></td>
+									<td><?php echo $row['client_trade_name']; ?></td>
+									<td><?php echo $row['client_line_of_business']; ?></td>
+									<td><?php echo $row['client_address']; ?></td>
+									<td><?php echo $row['client_email']; ?></td>
+									<td><button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#EditModal<?php echo $row['client_id']?>">Edit</button></td>
+				<!-- edit modal -->
+				<div class="modal fade" data-keyboard="false" data-backdrop="static" id="EditModal<?php echo $row['client_id']?>" tabindex="-1" aria-hidden="true">
+					<!-- modal dialog -->
+					<div class="modal-dialog modal-md modal-dialog-scrollable modal-modified">
+						<!-- modal content -->
+						<div class="modal-content">
+							<!-- header -->
+							<div class="modal-header">
+								<h4 class="modal-title">Edit Client</h4>
+								<button class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<!-- end of header -->
+							<!-- body -->
+							<div class="modal-body">
+								<div class="container-fluid">
+								<form class="form" method="POST" action="editclient.php">
+									<div class="row form-group">
+										<label class="control-label">Client ID</label>
+										<input type="text" class="form-control" name="client_id" value="<?php echo $row['client_id'];?>">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">Full Name</label>
+										<input type="text" class="form-control" name="client_name" value="<?php echo $row['client_name'];?>">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">VAT Type</label>
+										<input type="text" class="form-control" name="client_vat_type" value="<?php echo $row['client_vat_type'];?>">
+										<!-- <input type="text" class="form-control" name="client_name"> -->
+									</div>
+									<div class="row form-group">
+										<label class="control-label">RDO</label>
+										<input type="text" class="form-control" name="client_rdo" value="<?php echo $row['client_rdo'];?>">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">TIN</label>
+										<input type="text" class="form-control" name="client_tin" value="<?php echo $row['client_tin'];?>">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">Tradename</label>
+										<input type="text" class="form-control" name="client_trade_name" value="<?php echo $row['client_trade_name'];?>">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">Line of Business</label>
+										<input type="text" class="form-control" name="client_line_of_business" value="<?php echo $row['client_line_of_business'];?>">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">Address</label>
+										<input type="text" class="form-control" name="client_address" value="<?php echo $row['client_address'];?>">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">Email</label>
+										<input type="text" class="form-control" name="client_email" value="<?php echo $row['client_email'];?>">
+									</div>
+								</div>
+							</div>
+							<!-- end of body -->
+							<!-- footer -->
+							<div class="modal-footer">
+									<button type="submit" class="btn btn-primary btn-sm">Save</button>
+									<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+								</form>
+							</div>
+							<!-- end of footer -->
+						</div>
+						<!-- end of modal content -->
+					</div>
+					<!-- end of modal dialog -->
+				</div>
+				<!-- end of edit modal -->
+									<td><button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#DeleteModal<?php echo $row['client_id'];?>">Delete</button></td>
+									<!-- delete modal -->
+				<div class="modal fade" data-keyboard="false" data-backdrop="static" id="DeleteModal<?php echo $row['client_id'];?>" tab-index="-1" aria-hidden="true">
+					<!-- modal dialog starts here -->
+					<div class="modal-dialog modal-md">
+						<!-- modal content starts here -->
+						<div class="modal-content">
+							<!-- modal header starts here -->
+							<div class="modal-header">
+								<h4 class="modal-title">Delete Client</h4>
+								<button class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<!-- modal header ends here -->
+							<!-- modal body starts here -->
+							<div class="modal-body">
+								<div class="container">
+									Are you sure to delete this client?<br>
+									<?php echo $row['client_name'];?>
+								</div>
+							</div>
+							<!-- modal body ends here -->
+							<!-- modal footer starts here -->
+							<div class="modal-footer">
+								<a href="deleteclient.php?id=<?php echo $row['client_id'];?>" class="btn btn-danger btn-sm">Delete</a>
+								<button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+							</div>
+							<!-- modal footer ends here -->
+						</div>
+						<!-- modal content ends here -->
+					</div>
+					<!-- modal dialog ends here -->
+				</div>
+									<!-- end of delete modal -->
+								</tr>
+								<?php
+							}
+						?>
+					</tbody>
+				</table>
+				<!-- end of client table -->
+			</div>
+		</div>
+		<!-- end of client listing -->
+		<!-- end of third row -->
+
 	</div>
 	<!-- end of client container -->
 
 </body>
+<script type="text/javascript">
+	
+	$('#data-table').DataTable({
+		lengthMenu: [[5,10,25,-1],[5,10,25,"All"]]
+	});
+
+</script>
 </html>
