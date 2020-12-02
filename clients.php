@@ -78,7 +78,7 @@
 
 				<!-- Charges Page Link -->
 				<li class="nav-item">
-					<a class="nav-link" href="#">Charges</a>
+					<a class="nav-link" href="charges.php">Charges</a>
 				</li>
 
 				<!-- Sign-out Link -->
