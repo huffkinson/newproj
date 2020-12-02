@@ -127,7 +127,19 @@
 						<!-- start of modal body -->
 						<div class="modal-body">
 							<div class="container-fluid">
-
+								<form class="form" method="POST" action="addnewcharges.php">
+									<div class="row form-group">
+										<label class="control-label">Name</label>
+										<input type="text" class="form-control" name="name">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">Description</label>
+										<input type="text" class="form-control" name="description">
+									</div>
+									<div class="row form-group">
+										<label class="control-label">Default Amount</label>
+										<input type="text" class="form-control" name="amount">
+									</div>
 							</div>
 						</div>
 						<!-- end of modal body -->
@@ -175,7 +187,59 @@
 						<td><?php echo $row['name']; ?></td>
 						<td><?php echo $row['description']; ?></td>
 						<td><?php echo $row['amount']; ?></td>
-						<td>edit</td>
+						<td>
+							<!-- start of edit button -->
+							<button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#EditModal<?php echo $row['id']?>">Edit</button>
+							<!-- end of edit button -->
+
+							<!-- start of edit modal dialog -->
+							<div class="modal fade" data-keyboard="false" data-backdrop="static" id="EditModal<?php echo $row['id']?>" tabindex="-1" aria-hidden="true">
+								<div class="modal-dialog modal-md modal-dialog-scrollable modal-modified">
+									<!-- start of edit modal content -->
+									<div class="modal-content">
+										
+										<!-- start of edit modal header -->
+										<div class="modal-header">
+											<h4 class="modal-title">Edit Charges</h4>
+											<button class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- end of edit modal header -->
+										
+										<!-- start of edit modal body -->
+										<div class="modal-body">
+											<div class="container-fluid">
+											<form class="form" method="POST" action="#">
+												<div class="row form-group">
+													<label class="control-label">Name</label>
+													<input type="text" class="form-control" name="name" value="<?php echo $row['name'];?>">
+												</div>
+												<div class="row form-group">
+													<label class="control-label">Description</label>
+													<input type="text" class="form-control" name="description" value="<?php echo $row['description'];?>">
+												</div>
+												<div class="row form-group">
+													<label class="control-label">Default Amount</label>
+													<input type="text" class="form-control" name="amount" value="<?php echo $row['amount'];?>">
+												</div>
+											</div>
+										</div>
+										<!-- end of edit modal body -->
+
+										<!-- start of edit modal footer -->
+										<div class="modal-footer">
+											<button type="submit" class="btn btn-primary btn-sm">Save</button>
+											<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+											</form>
+										</div>
+										<!-- end of edit modal footer -->
+
+									</div>
+									<!-- end of edit modal content -->
+								</div>
+							</div>
+							<!-- end of edit modal dialog -->
+
+						</td>
 					</tr>
 					<?php
 						}
