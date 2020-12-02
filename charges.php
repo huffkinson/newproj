@@ -200,7 +200,7 @@
 										
 										<!-- start of edit modal header -->
 										<div class="modal-header">
-											<h4 class="modal-title">Edit Charges</h4>
+											<h4 class="modal-title">Edit Charges <?php echo $row['id'];?></h4>
 											<button class="close" data-dismiss="modal">&times;</button>
 										</div>
 										<!-- end of edit modal header -->
@@ -208,7 +208,7 @@
 										<!-- start of edit modal body -->
 										<div class="modal-body">
 											<div class="container-fluid">
-											<form class="form" method="POST" action="#">
+											<form class="form" method="POST" action="editcharges.php?id=<?php echo $row['id'];?>">
 												<div class="row form-group">
 													<label class="control-label">Name</label>
 													<input type="text" class="form-control" name="name" value="<?php echo $row['name'];?>">
@@ -221,15 +221,17 @@
 													<label class="control-label">Default Amount</label>
 													<input type="text" class="form-control" name="amount" value="<?php echo $row['amount'];?>">
 												</div>
-											</div>
+											
 										</div>
 										<!-- end of edit modal body -->
 
 										<!-- start of edit modal footer -->
 										<div class="modal-footer">
 											<button type="submit" class="btn btn-primary btn-sm">Save</button>
+
 											<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
 											</form>
+											</div>
 										</div>
 										<!-- end of edit modal footer -->
 

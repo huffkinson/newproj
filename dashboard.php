@@ -172,7 +172,7 @@
 
 				<!-- Charges Page Link -->
 				<li class="nav-item">
-					<a class="nav-link" href="#">Charges</a>
+					<a class="nav-link" href="charges.php">Charges</a>
 				</li>
 
 				<!-- Sign-out Link -->
@@ -315,7 +315,7 @@
 			          	Total records: 
 			          </p>
 			          <br>
-			          <a href="#" class="card-link btn btn-sm btn-dark">View</a>
+			          <a href="charges.php" class="card-link btn btn-sm btn-dark">View</a>
 		            </div>
 		          </div>
 		        </div>
