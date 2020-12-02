@@ -5,7 +5,6 @@
 	<!-- bootstrap, styles, and scripts -->
 	<meta charset="utf-8">
     
-    <!-- scripts -->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="landing-page.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
@@ -15,6 +14,7 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/datatables.min.js"></script>
+	
 </head>
 <body>
 <!-- navigation bar starts here -->
@@ -147,6 +147,7 @@
 		<!-- end of buttons section -->
 
 		<!-- start of charges data table listing -->
+		<div class="container">
 		<div class="row justify-content-center spacer">
 			<!-- start of data table -->
 			<table class="table table-striped table-bordered table-hover table-sm" id="data-table">
@@ -161,13 +162,34 @@
 				<!-- end of table head -->
 				<!-- start of table body -->
 				<tbody>
-					
+					<?php
+						include('conn.php');
+						$SQL = "SELECT * FROM tbl_charges";
+
+						$result = mysqli_query($connection, $SQL);
+						while($row=mysqli_fetch_assoc($result)){
+					?>
+					<!-- fill table with rows from database -->
+					<tr>
+						<td><?php echo $row['id']; ?></td>
+						<td><?php echo $row['name']; ?></td>
+						<td><?php echo $row['description']; ?></td>
+						<td><?php echo $row['amount']; ?></td>
+						<td>edit</td>
+					</tr>
+					<?php
+						}
+					?>
 				</tbody>
 				<!-- end of table body -->
 			</table>
 			<!-- end of data table -->
 		</div>
+		</div>
 		<!-- end of charges data table listing -->
+
+		
+
 	</div>													
 	<!-- end of charges container -->
 
